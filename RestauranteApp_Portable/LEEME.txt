@@ -1,0 +1,93 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                     MI RESTAURANTE - VERSIÓN PORTABLE                ║
+║                            Versión 1.0.0                             ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+📦 ESTA ES LA VERSIÓN PORTABLE (NO REQUIERE INSTALACIÓN)
+
+═══════════════════════════════════════════════════════════════════════
+🚀 CÓMO EJECUTAR LA APLICACIÓN
+═══════════════════════════════════════════════════════════════════════
+
+1. Asegúrate de que todas las carpetas y archivos de esta carpeta 
+   permanezcan juntos en el mismo directorio.
+
+2. Haz doble clic en "RestauranteApp.exe" para iniciar la aplicación.
+
+3. La aplicación guardará su base de datos en:
+   C:\Users\[TuUsuario]\AppData\Local\RestauranteApp\restaurante.db
+
+═══════════════════════════════════════════════════════════════════════
+💾 REQUISITOS DEL SISTEMA
+═══════════════════════════════════════════════════════════════════════
+
+✓ Windows 10 o Windows 11 (64-bit)
+✓ 100 MB de espacio en disco
+✓ .NET 8 Runtime (ya incluido en esta versión)
+
+⚠️ IMPORTANTE: Esta versión ya incluye todas las bibliotecas necesarias.
+   NO necesitas instalar nada adicional.
+
+═══════════════════════════════════════════════════════════════════════
+🔐 LECTOR DE HUELLAS DACTILARES (OPCIONAL)
+═══════════════════════════════════════════════════════════════════════
+
+Si vas a usar el lector HID U.are.U 4500:
+
+1. Instala el driver del lector desde:
+   https://www.digitalpersona.com/
+
+2. Instala el SDK One Touch v1.6.x
+
+3. La aplicación detectará automáticamente el lector al iniciar.
+
+═══════════════════════════════════════════════════════════════════════
+📂 CONTENIDO DE ESTA CARPETA
+═══════════════════════════════════════════════════════════════════════
+
+RestauranteApp.exe        → Ejecutable principal
+*.dll                     → Bibliotecas necesarias
+runtimes/                 → Componentes del sistema
+cs/, de/, es/, etc.       → Archivos de idioma
+
+═══════════════════════════════════════════════════════════════════════
+🔄 COPIAR A OTRA PC
+═══════════════════════════════════════════════════════════════════════
+
+Para usar en otra computadora:
+
+1. Copia TODA esta carpeta completa a una USB o unidad de red.
+
+2. Pégala en la PC de destino (por ejemplo: C:\MisAplicaciones\).
+
+3. Ejecuta RestauranteApp.exe directamente.
+
+4. CADA PC tendrá su propia base de datos independiente.
+
+═══════════════════════════════════════════════════════════════════════
+📊 BASE DE DATOS
+═══════════════════════════════════════════════════════════════════════
+
+La base de datos NO está en esta carpeta. Se crea automáticamente en:
+
+  Windows: C:\Users\[Usuario]\AppData\Local\RestauranteApp\
+
+Si deseas compartir la base de datos entre PCs:
+  1. Cierra la aplicación
+  2. Copia el archivo "restaurante.db" 
+  3. Pégalo en la misma ruta en la otra PC
+
+═══════════════════════════════════════════════════════════════════════
+🆘 SOPORTE
+═══════════════════════════════════════════════════════════════════════
+
+Para más información, consulta la documentación completa en:
+  → README.md (incluido en la carpeta original del proyecto)
+
+═══════════════════════════════════════════════════════════════════════
+✅ TODO LISTO
+═══════════════════════════════════════════════════════════════════════
+
+Simplemente ejecuta "RestauranteApp.exe" y comienza a usar el sistema.
+
+🍕 ¡Que tengas un excelente servicio!

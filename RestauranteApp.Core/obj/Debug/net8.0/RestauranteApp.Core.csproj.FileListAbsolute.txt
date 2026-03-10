@@ -1,0 +1,15 @@
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\bin\Debug\net8.0\RestauranteApp.Core.deps.json
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\bin\Debug\net8.0\RestauranteApp.Core.dll
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\bin\Debug\net8.0\RestauranteApp.Core.pdb
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\bin\Debug\net8.0\RestauranteApp.Data.dll
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\bin\Debug\net8.0\RestauranteApp.Data.pdb
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\obj\Debug\net8.0\RestauranteApp.Core.csproj.AssemblyReference.cache
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\obj\Debug\net8.0\RestauranteApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\obj\Debug\net8.0\RestauranteApp.Core.AssemblyInfoInputs.cache
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\obj\Debug\net8.0\RestauranteApp.Core.AssemblyInfo.cs
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\obj\Debug\net8.0\RestauranteApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\obj\Debug\net8.0\Restaura.F949EA58.Up2Date
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\obj\Debug\net8.0\RestauranteApp.Core.dll
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\obj\Debug\net8.0\refint\RestauranteApp.Core.dll
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\obj\Debug\net8.0\RestauranteApp.Core.pdb
+C:\Users\jholm\RestauranteApp\RestauranteApp.Core\obj\Debug\net8.0\ref\RestauranteApp.Core.dll

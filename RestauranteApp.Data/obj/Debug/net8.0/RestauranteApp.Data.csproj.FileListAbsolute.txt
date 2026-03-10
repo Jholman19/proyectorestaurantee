@@ -1,0 +1,14 @@
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\bin\Debug\net8.0\RestauranteApp.Data.deps.json
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\bin\Debug\net8.0\RestauranteApp.Data.runtimeconfig.json
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\bin\Debug\net8.0\RestauranteApp.Data.dll
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\bin\Debug\net8.0\RestauranteApp.Data.pdb
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\obj\Debug\net8.0\RestauranteApp.Data.csproj.AssemblyReference.cache
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\obj\Debug\net8.0\RestauranteApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\obj\Debug\net8.0\RestauranteApp.Data.AssemblyInfoInputs.cache
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\obj\Debug\net8.0\RestauranteApp.Data.AssemblyInfo.cs
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\obj\Debug\net8.0\RestauranteApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\obj\Debug\net8.0\RestauranteApp.Data.dll
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\obj\Debug\net8.0\refint\RestauranteApp.Data.dll
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\obj\Debug\net8.0\RestauranteApp.Data.pdb
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\obj\Debug\net8.0\RestauranteApp.Data.genruntimeconfig.cache
+C:\Users\jholm\RestauranteApp\RestauranteApp.Data\obj\Debug\net8.0\ref\RestauranteApp.Data.dll

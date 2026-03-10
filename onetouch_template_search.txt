@@ -1,0 +1,39 @@
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\EnrollmentForm.cs:16: 		public delegate void OnTemplateEventHandler(DPFP.Template template);
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\EnrollmentForm.cs:18: 		public event OnTemplateEventHandler OnTemplate;
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\EnrollmentForm.cs:39: 				Enroller.AddFeatures(features);		// Add feature set to template.
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\EnrollmentForm.cs:44: 				// Check if template has been created.
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\EnrollmentForm.cs:45: 				switch(Enroller.TemplateStatus)
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\EnrollmentForm.cs:48: 						OnTemplate(Enroller.Template);
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\EnrollmentForm.cs:57: 						OnTemplate(null);
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:29: 			Enroller.OnTemplate += this.OnTemplate;
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:36: 			Verifier.Verify(Template);
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:42: 			save.Filter = "Fingerprint Template File (*.fpt)|*.fpt";
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:45: 					Template.Serialize(fs);
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:53: 			open.Filter = "Fingerprint Template File (*.fpt)|*.fpt";
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:56: 					DPFP.Template template = new DPFP.Template(fs);
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:57: 					OnTemplate(template);
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:62: 		private void OnTemplate(DPFP.Template template)
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:66: 				Template = template;
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:67: 				VerifyButton.Enabled = SaveButton.Enabled = (Template != null);
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:68: 				if (Template != null)
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:69: 					MessageBox.Show("The fingerprint template is ready for fingerprint verification.", "Fingerprint Enrollment");
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:71: 					MessageBox.Show("The fingerprint template is not valid. Repeat fingerprint enrollment.", "Fingerprint Enrollment");
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.cs:75: 		private DPFP.Template Template;
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.Designer.cs:96: 			this.SaveButton.Text = "Save Fingerprint Template";
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\MainForm.Designer.cs:108: 			this.LoadButton.Text = "Read Fingerprint Template";
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\VerificationForm.cs:17: 		public void Verify(DPFP.Template template)
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\VerificationForm.cs:19: 			Template = template;
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\VerificationForm.cs:27: 			Verificator = new DPFP.Verification.Verification();		// Create a fingerprint template verificator
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\VerificationForm.cs:42: 				// Compare the feature set with our template
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\VerificationForm.cs:44: 				Verificator.Verify(features, Template, ref result);
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\Enrollment\VerificationForm.cs:59: 		private DPFP.Template Template;
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\AppData.cs:25: 		public DPFP.Template[] Templates = new DPFP.Template[MaxFingers];
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\EnrollmentForm.cs:32:     public void EnrollmentControl_OnEnroll(Object Control, int Finger, DPFP.Template Template, ref DPFP.Gui.EventHandlerStatus Status) {
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\EnrollmentForm.cs:34:         Data.Templates[Finger - 1] = Template;		    // store a finger template
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\EnrollmentForm.cs:44:         Data.Templates[Finger - 1] = null;			    // clear the finger template
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\VerificationForm.cs:20:       // Compare feature set with all stored templates.
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\VerificationForm.cs:21:       foreach (DPFP.Template template in Data.Templates) {
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\VerificationForm.cs:22:         // Get template from storage.
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\VerificationForm.cs:23:         if (template != null) {
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\VerificationForm.cs:24:           // Compare feature set with particular template.
+C:\Program Files\DigitalPersona\One Touch SDK\.NET\Samples\Visual Studio 2005\CSharp\UI Support\VerificationForm.cs:25:           ver.Verify(FeatureSet, template, ref res);

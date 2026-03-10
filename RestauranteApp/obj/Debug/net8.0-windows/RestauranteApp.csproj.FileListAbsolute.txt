@@ -1,0 +1,15 @@
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\RestauranteApp.csproj.AssemblyReference.cache
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\ClienteForm.baml
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\ComboForm.baml
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\CombosWindow.baml
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\Resources\Styles.baml
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\SuscripcionesWindow.baml
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\App.baml
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\ClienteForm.g.cs
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\ComboForm.g.cs
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\CombosWindow.g.cs
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\SuscripcionesWindow.g.cs
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\jholm\RestauranteApp\RestauranteApp\obj\Debug\net8.0-windows\RestauranteApp_MarkupCompile.cache

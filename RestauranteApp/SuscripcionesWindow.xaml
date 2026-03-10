@@ -1,0 +1,207 @@
+<Window x:Class="RestauranteApp.SuscripcionesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="⭐ Gestión de Suscripciones"
+        Height="700" Width="1100"
+        WindowStartupLocation="CenterOwner"
+        Background="{StaticResource BackgroundLight}">
+    <Grid Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="{StaticResource PrimaryGradient}" Padding="20,16" Margin="0">
+            <TextBlock Text="⭐ Gestión de Suscripciones de Clientes" Style="{StaticResource TitleText}" FontSize="22"/>
+        </Border>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1" Margin="16">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="380"/>
+                <ColumnDefinition Width="16"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- LEFT: Crear Suscripción -->
+            <Border Grid.Column="0" Padding="16" CornerRadius="8" BorderThickness="1" BorderBrush="{StaticResource BorderColor}" Background="White">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+
+                    <TextBlock Text="📋 Nueva Suscripción" FontWeight="Bold" Foreground="{StaticResource PrimaryColor}" 
+                               Margin="0,0,0,12" FontSize="14"/>
+
+                    <!-- Cliente -->
+                    <TextBlock Text="👤 Cliente" Style="{StaticResource FormLabel}"/>
+                    <ComboBox x:Name="ClienteBox"
+                              DisplayMemberPath="Nombre"
+                              SelectedValuePath="ClienteId"
+                              SelectionChanged="ClienteBox_SelectionChanged"
+                              IsEditable="True"
+                              Height="36"
+                              Padding="8,6,0,6"
+                              Margin="0,0,0,12"/>
+
+                    <!-- Combo -->
+                    <TextBlock Text="🍝 Combo" Style="{StaticResource FormLabel}"/>
+                    <ComboBox x:Name="ComboBox"
+                              DisplayMemberPath="Nombre"
+                              SelectedValuePath="ComboId"
+                              IsEditable="True"
+                              Height="36"
+                              Padding="8,6,0,6"
+                              Margin="0,0,0,12"/>
+
+                    <!-- Inicio -->
+                    <TextBlock Text="📅 Fecha de Inicio" Style="{StaticResource FormLabel}"/>
+                    <DatePicker x:Name="InicioPicker" Height="36" Margin="0,0,0,12"/>
+
+                    <!-- Duración -->
+                    <TextBlock Text="⏱️ Duración (días)" Style="{StaticResource FormLabel}"/>
+                    <TextBox x:Name="DuracionBox" 
+                             Style="{StaticResource ModernTextBox}"
+                             Text="30"
+                             Margin="0,0,0,12"
+                             ToolTip="Escribe el número de días (1-365)"/>
+
+                    <!-- Crear Suscripción Button -->
+                    <Button Content="✅ Crear Suscripción"
+                            Margin="0,0,0,8"
+                            Height="40"
+                            Style="{StaticResource ModernButton}"
+                            Click="CrearSuscripcion_Click"/>
+
+                    <Button Content="⚙️ Procesar Vencimientos"
+                            Margin="0,0,0,12"
+                            Height="40"
+                            Style="{StaticResource ModernButton}"
+                            Background="{StaticResource AccentColor}"/>
+
+                    <!-- Separator -->
+                    <Border BorderBrush="{StaticResource BorderColor}" BorderThickness="0,1,0,0" Margin="0,12,0,12"/>
+
+                    <!-- Active Subscription Info -->
+                    <TextBlock Text="📊 Suscripción Activa" FontWeight="Bold" Foreground="{StaticResource PrimaryColor}" Margin="0,0,0,8"/>
+                    <TextBlock x:Name="InfoText"
+                               Margin="0,0,0,12"
+                               TextWrapping="Wrap"
+                               Foreground="{StaticResource TextSecondary}"
+                               FontSize="12"/>
+
+                    <!-- Separator -->
+                    <Border BorderBrush="{StaticResource BorderColor}" BorderThickness="0,1,0,0" Margin="0,12,0,12"/>
+
+                    <!-- Renovar -->
+                    <TextBlock Text="🔄 Renovar Suscripción" FontWeight="Bold" Foreground="{StaticResource PrimaryColor}" Margin="0,0,0,8"/>
+                    <TextBlock Text="Duración (días)" Style="{StaticResource FormLabel}"/>
+                    <TextBox x:Name="RenovacionBox" 
+                             Style="{StaticResource ModernTextBox}"
+                             Text="30"
+                             Margin="0,0,0,8"
+                             ToolTip="Escribe el número de días (1-365)"/>
+
+                    <Button Content="🔐 Renovar"
+                            Margin="0,0,0,12"
+                            Height="40"
+                            Style="{StaticResource SecondaryButton}"
+                            Click="Renovar_Click"/>
+                    
+                    <!-- Fingerprint -->
+                    <TextBlock Text="👆 Huella Digital" FontWeight="Bold" Foreground="{StaticResource PrimaryColor}" Margin="0,0,0,8"/>
+                    <StackPanel Orientation="Vertical">
+                        <Button x:Name="EnrollFingerprintButton" Content="📱 Registrar Huella" Height="36" 
+                                Style="{StaticResource ModernButton}" Click="EnrollFingerprint_Click" Margin="0,0,0,8"/>
+                        <Button x:Name="ListenFingerprintButton" Content="🎧 Iniciar Escucha" Height="36" 
+                                Style="{StaticResource ModernButton}" Click="ToggleListen_Click"/>
+                    </StackPanel>
+                    <TextBlock x:Name="FingerprintStatusText" Margin="0,8,0,0" Foreground="{StaticResource TextSecondary}" TextWrapping="Wrap" FontSize="11"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+
+            <!-- RIGHT: Consumos -->
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Date Selector -->
+                <Border Grid.Row="0" Padding="16" CornerRadius="8" BorderThickness="1" 
+                        BorderBrush="{StaticResource BorderColor}" Background="White" Margin="0,0,0,16">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock Text="📆 Seleccionar Día:" VerticalAlignment="Center" Margin="0,0,12,0" 
+                                   FontWeight="Medium" Foreground="{StaticResource TextPrimary}"/>
+                        <DatePicker x:Name="DiaPicker" Width="200" SelectedDateChanged="DiaPicker_SelectedDateChanged"/>
+                        <TextBlock x:Name="ResumenText" Margin="12,0,0,0" VerticalAlignment="Center" 
+                                   Foreground="{StaticResource TextSecondary}" FontSize="12"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Acciones del Día -->
+                <Border Grid.Row="1" Padding="16" CornerRadius="8" BorderThickness="1" 
+                        BorderBrush="{StaticResource BorderColor}" Background="White" Margin="0,0,0,16">
+                    <StackPanel>
+                        <TextBlock Text="📌 Acciones del Día" FontWeight="Bold" Foreground="{StaticResource PrimaryColor}" Margin="0,0,0,12"/>
+
+                        <!-- Consumos -->
+                        <TextBlock Text="🍔 Registrar Consumos" FontWeight="Medium" Foreground="{StaticResource TextPrimary}" Margin="0,0,0,8"/>
+                        <WrapPanel Margin="0,0,0,12">
+                            <Button x:Name="BtnDesayuno" Content="🌅 Desayuno" Height="36" 
+                                    Style="{StaticResource ModernButton}" Click="ConsumirDesayuno_Click" Width="140"/>
+                            <Button x:Name="BtnAlmuerzo" Content="☀️ Almuerzo" Height="36" 
+                                    Style="{StaticResource ModernButton}" Click="ConsumirAlmuerzo_Click" Width="140"/>
+                            <Button x:Name="BtnCena" Content="🌙 Cena" Height="36" 
+                                    Style="{StaticResource ModernButton}" Click="ConsumirCena_Click" Width="140"/>
+                        </WrapPanel>
+
+                        <!-- Ausencias -->
+                        <TextBlock Text="❌ Marcar Ausencia (sin descuento)" FontWeight="Medium" Foreground="{StaticResource ErrorColor}" Margin="0,0,0,8"/>
+                        <WrapPanel>
+                            <Button x:Name="BtnAusenciaDesayuno" Content="🚫 Ausencia Desayuno" Height="36" 
+                                    Style="{StaticResource ModernButton}" Background="{StaticResource ErrorColor}"
+                                    Click="AusenciaDesayuno_Click" Width="160"/>
+                            <Button x:Name="BtnAusenciaAlmuerzo" Content="🚫 Ausencia Almuerzo" Height="36" 
+                                    Style="{StaticResource ModernButton}" Background="{StaticResource ErrorColor}"
+                                    Click="AusenciaAlmuerzo_Click" Width="160"/>
+                            <Button x:Name="BtnAusenciaCena" Content="🚫 Ausencia Cena" Height="36" 
+                                    Style="{StaticResource ModernButton}" Background="{StaticResource ErrorColor}"
+                                    Click="AusenciaCena_Click" Width="160"/>
+                        </WrapPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Consumos Grid -->
+                <TextBlock Grid.Row="2" Text="📊 Consumos del Día" FontWeight="Bold" 
+                           Foreground="{StaticResource PrimaryColor}" Margin="0,0,0,8"/>
+
+                <Border Grid.Row="3" BorderBrush="{StaticResource BorderColor}" BorderThickness="1" 
+                        CornerRadius="4" Background="White" Padding="0">
+                    <DataGrid x:Name="ConsumosGrid"
+                              AutoGenerateColumns="False"
+                              CanUserAddRows="False"
+                              IsReadOnly="True"
+                              AlternatingRowBackground="#FFFAFAFA"
+                              RowHeight="28">
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="Background" Value="{StaticResource PrimaryColor}"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Padding" Value="8,6"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Tipo de Consumo" Binding="{Binding Tipo}" Width="*"/>
+                            <DataGridTextColumn Header="Fecha" Binding="{Binding Dia}" Width="150"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
